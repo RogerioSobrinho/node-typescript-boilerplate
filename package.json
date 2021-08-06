@@ -1,14 +1,19 @@
 {
   "name": "api-example",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "Boilerplate to quick-start Node.js development in TypeScript.",
+  "engines": {
+    "node": ">= 14.16 <15"
+  },
   "scripts": {
     "watch": "tsc-watch --onSuccess \"node ./dist/demo.js\"",
     "build": "tsc",
+    "clean": "rimraf coverage build tmp",
     "lint": "eslint src --ext .js,.jsx,.ts,.tsx",
     "prepare": "husky install",
     "test": "jest",
+    "test:coverage": "jest --coverage",
+    "test:watch": "jest --watch",
     "release": "standard-version"
   },
   "author": "Rogerio Sobrinho <rogerio.sobrinho@protonmail.com>",
