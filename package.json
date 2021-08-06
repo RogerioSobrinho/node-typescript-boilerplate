@@ -6,7 +6,8 @@
   "author": "Rogerio Sobrinho <rogerio.sobrinho@protonmail.com>",
   "license": "MIT",
   "scripts": {
-    "watch": "tsc-watch --onSuccess \"node ./dist/demo.js\"",
+    "start": "node ./dist/main.js",
+    "start:watch": "tsc-watch --onSuccess \"node ./dist/demo.js\"",
     "prebuild": "rimraf dist",
     "build": "tsc",
     "format": "prettier --write \"src/**/*.ts\" \"test/**/*.ts\"",
